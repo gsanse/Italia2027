@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Itália em Família 2026–2027</title>
+<style>
+body{margin:0;background:#f7f4ed;color:#24383b;font:16px/1.6 system-ui}
+header{background:linear-gradient(120deg,#143b40,#38756e);color:white;padding:60px 22px;text-align:center}
+h1,h2{font-family:Georgia,serif;font-weight:normal}h1{font-size:clamp(38px,8vw,70px);margin:10px}
+main{max-width:900px;margin:auto;padding:20px}
+section{margin:30px 0}h2{font-size:30px}
+.card{background:white;padding:18px;margin:12px 0;border-radius:14px;border:1px solid #e3e1db}
+small{color:#647878}button{padding:10px;border:1px solid #d5dfdc;background:white;border-radius:9px;color:#163e43}
+button.active{background:#163e43;color:white}
+#dates{display:flex;gap:6px;overflow-x:auto;padding:12px 0}
+#dates button{flex-shrink:0}
+footer{background:#163e43;color:white;text-align:center;padding:24px}
+</style>
+</head>
+<body>
+<header><p>UMA VIAGEM ÀS NOSSAS ORIGENS</p><h1>Itália em Família</h1><p>25 de dezembro de 2026 a 11 de janeiro de 2027</p><p>Milão · Florença · Roma · Camerota · Nápoles</p></header>
+<main>
+<section><h2>Nosso calendário</h2><p>Toque em uma data para conhecer o roteiro.</p><div id="dates"></div><div class="card" id="detail"></div></section>
+<section><h2>Hospedagens</h2>
+<div class="card"><b>26–30/12 · Florença</b><p>Residenza San Lorenzo — Via Dell'Ariento 33</p></div>
+<div class="card"><b>30/12–03/01 · Milão</b><p>Just Hotel Milano — Via Napo Torriani 29</p></div>
+<div class="card"><b>03–07/01 · Roma</b><p>Gioberti Art Hotel — Via Gioberti 23</p></div>
+<div class="card"><b>07–08/01 · Marina di Camerota</b><p>La casa di Filomena — Via Nazario Sauro 15</p><small>Check-in até 18h</small></div>
+<div class="card"><b>08–09/01 · Nápoles</b><p>I 4 Elementi — Via San Tommaso d'Aquino 33</p><small>Check-in até 19h</small></div>
+<div class="card"><b>09–10/01 · Linate</b><p>Moxy Milan Linate Airport — hospedagem de Glaucio, Malu e Miguel. Demais familiares terão hospedagem separada.</p></div>
+</section>
+<section><h2>Trens</h2>
+<div class="card">26/12 · Milão → Florença · 18h09–20h04</div>
+<div class="card">30/12 · Florença → Milão · 20h55–22h51</div>
+<div class="card">03/01 · Milão → Roma · 12h59–16h14</div>
+<div class="card">07/01 · Roma → Nápoles · 08h05–09h18</div>
+<div class="card">09/01 · Nápoles → Milão · 17h25–22h01</div>
+</section>
+<section><h2>Voos e carro</h2>
+<div class="card"><b>Grupo de Brasília · 30/12</b><p>TAP TP16: Recife 05h50 → Lisboa 16h20.<br>TAP TP828: Lisboa 19h50 → Malpensa 23h35.</p></div>
+<div class="card"><b>Grupo de Brasília · 10/01</b><p>TAP TP823: Malpensa 11h55 → Lisboa 13h55.<br>TAP TP11: Lisboa 17h00 → Recife 21h55.</p></div>
+<div class="card"><b>Nanda</b><p>25/12: LA8072, saída de GRU às 18h05.<br>03/01: LA8073, Malpensa 12h10 → GRU 20h10.</p></div>
+<div class="card"><b>Glaucio, Malu e Miguel</b><p>10/01: saída de Linate às 09h45, via Paris e Fortaleza. Chegada final a São Paulo em 11/01 às 06h05.</p></div>
+<div class="card"><b>Carro · 07–08/01</b><p>Um Audi A3 automático ou similar, 5 lugares. Retirada em Napoli Centrale às 10h de 07/01; devolução no Parking P4, Corso Meridionale 60/62, às 18h de 08/01.</p><small>Transporte complementar dos demais viajantes ainda a organizar.</small></div>
+</section>
+<section><h2>Nossa família</h2><div class="card"><p>Glaucio, Nanda, Malu e Miguel iniciam a viagem.</p><p>Joaquim, Hilda, Perla, Lucas, Gabriel, Giovanni, Marina, Pedro e Arthur chegam em 30/12.</p><p>Nanda retorna em 03/01; Lucas deixa o roteiro conjunto em 07/01.</p><p>02/01: 16 anos de Miguel em Turim.<br>06/01: 22 anos de Pedro em Roma.</p></div></section>
+<section><h2>Informações úteis</h2><div class="card"><p>Os passeios devem incluir pausas e alternativas para quem preferir caminhar menos.</p><p>Confirmar ingressos, transporte complementar na Campânia, check-ins e traslados de aeroporto.</p><small>Este site é um guia familiar. Consulte os bilhetes e comprovantes para confirmar horários.</small></div></section>
+</main>
+<footer>Itália em Família · 2026–2027<br>De geração em geração, nossas histórias continuam.</footer>
+<script>
+const days=[
+["25/12","Embarque","Início da viagem e voo de Nanda saindo de São Paulo."],
+["26/12","Florença","Trem de Milão a Florença às 18h09. Check-in e descanso."],
+["27/12","Florença tranquila","Duomo, Ponte Vecchio e passeios leves."],
+["28/12","Pisa e Lucca","Passeio planejado pelas duas cidades toscanas."],
+["29/12","Arte em Florença","Accademia e possível visita aos Uffizi."],
+["30/12","Encontro em Milão","Trem de Florença às 20h55. Grupo de Brasília chega a Malpensa às 23h35."],
+["31/12","Réveillon","Descanso, Duomo e celebração em família."],
+["01/01","Milão","Dia tranquilo e refeição em família."],
+["02/01","Turim","Passeio e aniversário de 16 anos de Miguel."],
+["03/01","Roma","Nanda retorna ao Brasil. Trem Milão–Roma às 12h59."],
+["04/01","Roma histórica","Pantheon, Piazza Navona e Fontana di Trevi."],
+["05/01","Vaticano","Basílica de São Pedro e possível visita aos Museus Vaticanos."],
+["06/01","Roma antiga","Coliseu, Fórum Romano e aniversário de Pedro."],
+["07/01","Camerota","Trem Roma–Nápoles; retirada do carro; visita às origens da família e pernoite em Marina di Camerota."],
+["08/01","Costa Amalfitana","Passeio costeiro conforme clima e trânsito; devolução do carro em Nápoles até 18h."],
+["09/01","Nápoles e Milão","Passeio sem carro; trem para Milão às 17h25."],
+["10/01","Retorno ao Brasil","Embarques separados por Linate e Malpensa."],
+["11/01","Chegada","Conclusão da viagem com chegada a São Paulo."]
+];
+function show(i){
+document.getElementById("dates").innerHTML=days.map((d,j)=>'<button class="'+(i===j?'active':'')+'" onclick="show('+j+')">'+d[0]+'</button>').join('');
+document.getElementById("detail").innerHTML='<small>'+days[i][0]+'</small><h3>'+days[i][1]+'</h3><p>'+days[i][2]+'</p>';
+}show(0);
+</script>
+</body></html>
