@@ -17,9 +17,20 @@
 #visuais .barra-label{display:flex;justify-content:space-between;font-size:.92rem}
 #visuais .trilho{height:17px;border-radius:10px;background:#e4eae4;overflow:hidden}
 #visuais .preenchimento{height:100%;background:linear-gradient(90deg,#296347,#78b18c);border-radius:10px}
+
+#atracoes .atracoes-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:14px}
+#atracoes .atracao{background:#fff;border:1px solid #dce7df;border-radius:16px;overflow:hidden;box-shadow:0 3px 12px #163b2a0b}
+#atracoes .atracao-art{height:155px;position:relative;display:grid;place-items:center;background:linear-gradient(145deg,var(--a),var(--b));overflow:hidden}
+#atracoes .atracao-art:before{content:"";position:absolute;width:190px;height:190px;border-radius:50%;background:#ffffff30;right:-35px;top:-90px}
+#atracoes .atracao-art:after{content:"";position:absolute;width:120%;height:35px;left:-10%;bottom:-17px;border-radius:50%;background:#ffffff28}
+#atracoes .atracao-art .pictograma{position:relative;font-size:4.5rem;filter:drop-shadow(0 7px 6px #0003)}
+#atracoes .atracao-body{padding:14px}
+#atracoes .atracao-body h3{margin:4px 0;font-size:1.06rem}
+#atracoes .atracao-body .meta{font-size:.83rem;color:#63756a}
+#atracoes .atracao-body .data{display:inline-block;border-radius:16px;background:#eaf3ec;color:#205540;padding:2px 8px;font-size:.77rem;font-weight:700}
 </style></head><body>
 <header><p>25 de dezembro de 2026 — 11 de janeiro de 2027</p><h1>🇮🇹 Itália em Família</h1><p>Florença · Pisa · Lucca · Milão · Turim · Roma · Camerota · Costa Amalfitana · Nápoles</p><p>18 dias · encontro de 13 familiares</p></header>
-<nav><div><a href="#visuais">Visuais</a><a href="#calendario">Calendário</a><a href="#voos">Voos</a><a href="#trens">Trens</a><a href="#hoteis">Hotéis</a><a href="#carro">Carro</a><a href="#familia">Família</a><a href="#pendencias">Pendências</a></div></nav>
+<nav><div><a href="#visuais">Visuais</a><a href="#atracoes">Atrações</a><a href="#calendario">Calendário</a><a href="#voos">Voos</a><a href="#trens">Trens</a><a href="#hoteis">Hotéis</a><a href="#carro">Carro</a><a href="#familia">Família</a><a href="#pendencias">Pendências</a></div></nav>
 <main>
 <section id="visuais">
 <h2>🖼️ Viagem em imagens e gráficos</h2>
@@ -48,6 +59,18 @@
 <div><div class="barra-label"><span>03 a 06/01 · Após retorno da Nanda</span><strong>12</strong></div><div class="trilho"><div class="preenchimento" style="width:92.31%"></div></div></div>
 <div><div class="barra-label"><span>07 a 09/01 · Após saída do Lucas</span><strong>11</strong></div><div class="trilho"><div class="preenchimento" style="width:84.62%"></div></div></div>
 </div></section>
+<section id="atracoes"><h2>📍 Lugares que vamos conhecer</h2><p class="muted">Galeria ilustrada das principais atrações, com as datas planejadas. Os desenhos são representações simbólicas, não fotografias.</p><div class="atracoes-grid"><article class="atracao"><div class="atracao-art" style="--a:#d5a878;--b:#8e5846"><span class="pictograma" role="img" aria-label="Duomo de Florença">⛪</span></div><div class="atracao-body"><span class="data">27/12</span><h3>Duomo de Florença</h3><div class="meta">Florença · Catedral de Santa Maria del Fiore</div></div></article>
+<article class="atracao"><div class="atracao-art" style="--a:#d3b18b;--b:#7e9f9b"><span class="pictograma" role="img" aria-label="Ponte Vecchio">🌉</span></div><div class="atracao-body"><span class="data">27/12</span><h3>Ponte Vecchio</h3><div class="meta">Florença · Ponte histórica sobre o rio Arno</div></div></article>
+<article class="atracao"><div class="atracao-art" style="--a:#c9d7ce;--b:#779e88"><span class="pictograma" role="img" aria-label="Torre Inclinada">🗼</span></div><div class="atracao-body"><span class="data">28/12</span><h3>Torre Inclinada</h3><div class="meta">Pisa · Piazza dei Miracoli</div></div></article>
+<article class="atracao"><div class="atracao-art" style="--a:#b6caa0;--b:#668d69"><span class="pictograma" role="img" aria-label="Muralhas de Lucca">🏰</span></div><div class="atracao-body"><span class="data">28/12</span><h3>Muralhas de Lucca</h3><div class="meta">Lucca · Passeio pelo centro histórico</div></div></article>
+<article class="atracao"><div class="atracao-art" style="--a:#e6d8bf;--b:#a4a08c"><span class="pictograma" role="img" aria-label="David de Michelangelo">🗿</span></div><div class="atracao-body"><span class="data">29/12</span><h3>David de Michelangelo</h3><div class="meta">Florença · Galleria dell’Accademia; ingresso a confirmar</div></div></article>
+<article class="atracao"><div class="atracao-art" style="--a:#c6d5e2;--b:#7a9bb5"><span class="pictograma" role="img" aria-label="Duomo de Milão">⛪</span></div><div class="atracao-body"><span class="data">31/12</span><h3>Duomo de Milão</h3><div class="meta">Milão · Catedral e Piazza del Duomo</div></div></article>
+<article class="atracao"><div class="atracao-art" style="--a:#e4d3b6;--b:#ae8f69"><span class="pictograma" role="img" aria-label="Piazza Castello">🏛️</span></div><div class="atracao-body"><span class="data">02/01</span><h3>Piazza Castello</h3><div class="meta">Turim · Passeio de aniversário do Miguel</div></div></article>
+<article class="atracao"><div class="atracao-art" style="--a:#e8c2a0;--b:#b67d60"><span class="pictograma" role="img" aria-label="Coliseu">🏟️</span></div><div class="atracao-body"><span class="data">06/01</span><h3>Coliseu</h3><div class="meta">Roma · Anfiteatro romano; ingresso a confirmar</div></div></article>
+<article class="atracao"><div class="atracao-art" style="--a:#d8d0bd;--b:#8e9b8b"><span class="pictograma" role="img" aria-label="Basílica de São Pedro">⛪</span></div><div class="atracao-body"><span class="data">05/01</span><h3>Basílica de São Pedro</h3><div class="meta">Vaticano · Visita ao Vaticano</div></div></article>
+<article class="atracao"><div class="atracao-art" style="--a:#b6d9bc;--b:#5b937a"><span class="pictograma" role="img" aria-label="Vila ancestral">🏘️</span></div><div class="atracao-body"><span class="data">07/01</span><h3>Vila ancestral</h3><div class="meta">Camerota · Visita às origens da família</div></div></article>
+<article class="atracao"><div class="atracao-art" style="--a:#a6d4df;--b:#4d95ad"><span class="pictograma" role="img" aria-label="Costa e vilarejos">🌊</span></div><div class="atracao-body"><span class="data">08/01</span><h3>Costa e vilarejos</h3><div class="meta">Costa Amalfitana · Percurso panorâmico sujeito ao trânsito</div></div></article>
+<article class="atracao"><div class="atracao-art" style="--a:#efd1a2;--b:#bc8854"><span class="pictograma" role="img" aria-label="Centro histórico">🍕</span></div><div class="atracao-body"><span class="data">09/01</span><h3>Centro histórico</h3><div class="meta">Nápoles · Passeio antes do trem para Milão</div></div></article></div></section>
 <section id="calendario"><h2>📅 Calendário completo</h2><p>Toque numa data para consultar o programa do dia.</p><div id="dias" class="days"></div><div id="detalhe" class="detail"></div><div class="controls"><button class="action" onclick="mudarDia(-1)">Anterior</button><button class="action" onclick="mudarDia(1)">Próximo</button></div></section>
 <section id="voos"><h2>✈️ Voos da família</h2><p>Todos os horários são locais. Os seis voos de Glaucio, Malu e Miguel foram conferidos com o bilhete; LATAM e TAP seguem os dados registrados no roteiro e devem ser reconfirmados.</p><div id="listaVoos"></div><div class="notice"><strong>Conexão de 26/12:</strong> chegada a Milão Linate às 13h55 e trem saindo de Milano Centrale às 18h09. Nanda chega pelo aeroporto de Malpensa em voo separado, com horário de chegada a confirmar.</div></section>
 <section id="trens"><h2>🚄 Trens</h2><div class="scroll"><table><thead><tr><th>Data</th><th>Trecho</th><th>Horário</th><th>Situação</th></tr></thead><tbody id="listaTrens"></tbody></table></div></section>
