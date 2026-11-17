@@ -1,486 +1,157 @@
 
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="theme-color" content="#173f42">
-<title>Itália em Família | 2026–2027</title>
+<!-- INÍCIO: ATUALIZAÇÃO DE VOOS ITÁLIA 2027 -->
 <style>
-:root{
-  --verde:#173f42;--dourado:#cda36c;
-  --fundo:#f7f4ed;--texto:#273b3e;
-}
-*{box-sizing:border-box}
-html{scroll-behavior:smooth}
-body{
-  margin:0;background:var(--fundo);
-  color:var(--texto);
-  font:16px/1.6 system-ui,sans-serif;
-}
-header{
-  color:white;text-align:center;
-  padding:85px 20px;
-  background:linear-gradient(135deg,#123b40,#32716b);
-}
-h1,h2{font-family:Georgia,serif;font-weight:normal}
-h1{font-size:clamp(42px,9vw,76px);margin:8px}
-h2{font-size:30px}
-header p{max-width:650px;margin:14px auto}
-nav{
-  position:sticky;top:0;z-index:5;
-  background:white;padding:14px;
-  display:flex;gap:20px;overflow:auto;
-  border-bottom:1px solid #ddd;
-}
-nav a{
-  color:var(--verde);text-decoration:none;
-  font-size:14px;font-weight:bold;white-space:nowrap;
-}
-main{max-width:1050px;margin:auto;padding:20px}
-section{padding:24px 0}
-.grid{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-  gap:16px;
-}
-.card{
-  background:white;border-radius:15px;
-  overflow:hidden;border:1px solid #e3e5df;
-  margin-bottom:12px;
-}
-.card img{
-  display:block;width:100%;height:190px;
-  object-fit:cover;
-}
-.content{padding:18px}
-.content h3{margin:4px 0}
-small{color:#607678}
-.tag{
-  display:inline-block;background:#e7f0ec;
-  padding:4px 10px;border-radius:30px;
-  font-size:12px;color:#286358;
-}
-#dates{
-  display:flex;gap:8px;overflow-x:auto;
-  padding:10px 0 20px;
-}
-button{
-  border:0;border-radius:9px;
-  padding:11px 15px;cursor:pointer;
-  font:inherit;
-}
-.day{
-  flex:0 0 65px;background:white;
-  border:1px solid #d9dfdb;
-}
-.day.active{background:var(--verde);color:white}
-#detail{
-  background:white;border-left:5px solid var(--dourado);
-  padding:22px;border-radius:12px;min-height:180px;
-}
-#detail li{margin-bottom:8px}
-.actions{display:flex;gap:10px;margin-top:15px}
-.actions button{background:var(--verde);color:white}
-.actions button:disabled{opacity:.4}
-table{width:100%;border-collapse:collapse}
-td,th{
-  text-align:left;padding:12px;
-  border-bottom:1px solid #e4e6e2;
-}
-.tablewrap{overflow:auto}
-.notice{
-  background:white;border-left:4px solid var(--dourado);
-  padding:18px;margin:18px 0;border-radius:5px;
-}
-.check label{
-  display:block;background:white;
-  padding:12px;margin:8px 0;border-radius:9px;
-}
-.check input{accent-color:var(--verde)}
-footer{
-  text-align:center;background:var(--verde);
-  color:white;padding:35px 20px;margin-top:35px;
-}
-@media print{
-  nav,#dates,.actions{display:none}
-  header{padding:25px}
-  .card{break-inside:avoid}
-}
+  #voos-familia {
+    max-width: 1100px;
+    margin: 36px auto;
+    padding: 24px;
+    color: #253b32;
+    font-family: system-ui, sans-serif;
+  }
+  #voos-familia h2 { font-size: 2rem; margin-bottom: 8px; }
+  #voos-familia h3 { margin: 26px 0 12px; }
+  #voos-familia .nota { color: #64746c; font-size: .9rem; }
+  #voos-familia .voo-card {
+    background: #fff;
+    border: 1px solid #dce5de;
+    border-radius: 12px;
+    padding: 15px 18px;
+    margin: 10px 0;
+    box-shadow: 0 2px 8px #00000008;
+  }
+  #voos-familia .voo-card strong { color: #245a43; }
+  #voos-familia .rota {
+    font-size: 1.12rem;
+    font-weight: 650;
+    margin: 8px 0;
+  }
+  #voos-familia .detalhe {
+    font-size: .92rem;
+    color: #52665b;
+    line-height: 1.6;
+  }
+  #voos-familia .aviso {
+    padding: 14px;
+    border-left: 4px solid #c19a43;
+    background: #fff9e9;
+    border-radius: 6px;
+    margin-top: 20px;
+  }
 </style>
-</head>
-<body>
 
-<header>
-  <div style="letter-spacing:3px;font-size:12px">
-    UMA VIAGEM ÀS NOSSAS ORIGENS
+<section id="voos-familia">
+  <h2>✈️ Voos da família</h2>
+  <p class="nota">
+    Viagem de 25/12/2026 a 11/01/2027.
+    Todos os horários são locais de cada aeroporto.
+  </p>
+
+  <div id="lista-voos"></div>
+
+  <div class="aviso">
+    <strong>Atenção às conexões:</strong>
+    em 26/12, a chegada a Milão Linate está prevista
+    para 13h55, seguida do trem de Milano Centrale
+    para Florença às 18h09.
+    Em 10/01, o voo de retorno parte de Linate
+    às 09h45.
   </div>
-  <h1>Itália em Família</h1>
-  <p>25 de dezembro de 2026 — 11 de janeiro de 2027</p>
-  <p>Milão · Florença · Roma · Camerota · Nápoles</p>
-  <p>18 dias · Até 13 familiares · Memórias para gerações</p>
-</header>
 
-<nav>
-  <a href="#destinos">Destinos</a>
-  <a href="#roteiro">Calendário</a>
-  <a href="#hoteis">Hotéis</a>
-  <a href="#trens">Trens</a>
-  <a href="#voos">Voos</a>
-  <a href="#familia">Família</a>
-  <a href="#preparativos">Preparativos</a>
-</nav>
-
-<main>
-
-<section id="destinos">
-<h2>Nossos destinos</h2>
-<p>Uma viagem pela arte, pela história e pelas raízes da família.</p>
-
-<div class="grid">
-  <article class="card">
-    <img loading="lazy" alt="Florença"
-    src="https://images.unsplash.com/photo-1541370976299-4d24ebbc9077?w=900">
-    <div class="content">
-      <small>26–30 dezembro</small>
-      <h3>Florença e Toscana</h3>
-      <p>Duomo, Ponte Vecchio, Pisa, Lucca e grandes obras do Renascimento.</p>
-      <span class="tag">4 viajantes</span>
-    </div>
-  </article>
-
-  <article class="card">
-    <img loading="lazy" alt="Milão"
-    src="https://images.unsplash.com/photo-1513584684374-8bab748fbf90?w=900">
-    <div class="content">
-      <small>30 dezembro – 3 janeiro</small>
-      <h3>Milão e Turim</h3>
-      <p>Reunião da família, Réveillon e aniversário de Miguel.</p>
-      <span class="tag">Até 13 viajantes</span>
-    </div>
-  </article>
-
-  <article class="card">
-    <img loading="lazy" alt="Coliseu em Roma"
-    src="https://images.unsplash.com/photo-1552832230-c0197dd311b5?w=900">
-    <div class="content">
-      <small>3–7 janeiro</small>
-      <h3>Roma</h3>
-      <p>Vaticano, Coliseu, centro histórico e aniversário de Pedro.</p>
-      <span class="tag">12 viajantes</span>
-    </div>
-  </article>
-
-  <article class="card">
-    <img loading="lazy" alt="Paisagem mediterrânea"
-    src="https://images.unsplash.com/photo-1533105079780-92b9be482077?w=900">
-    <div class="content">
-      <small>7–8 janeiro</small>
-      <h3>Camerota</h3>
-      <p>Visita à região de origem de nossos antepassados, no Cilento.</p>
-      <span class="tag">11 viajantes</span>
-    </div>
-  </article>
-
-  <article class="card">
-    <img loading="lazy" alt="Costa mediterrânea"
-    src="https://images.unsplash.com/photo-1533587851505-d119e13fa0d7?w=900">
-    <div class="content">
-      <small>8–9 janeiro</small>
-      <h3>Costa Amalfitana e Nápoles</h3>
-      <p>Paisagens costeiras, vilarejos e sabores do sul da Itália.</p>
-      <span class="tag">Percurso a confirmar</span>
-    </div>
-  </article>
-</div>
-<p><small>Fotografias ilustrativas. Algumas representam paisagens da região, não necessariamente o local exato.</small></p>
+  <p class="nota">
+    Horários sujeitos a alterações pelas companhias.
+    Dados pessoais e localizadores não são publicados.
+  </p>
 </section>
-
-<section id="roteiro">
-<h2>Calendário interativo</h2>
-<p>Selecione uma data para conhecer a programação.</p>
-<div id="dates"></div>
-<div id="detail"></div>
-<div class="actions">
-  <button id="prev">← Anterior</button>
-  <button id="next">Próximo →</button>
-</div>
-</section>
-
-<section id="hoteis">
-<h2>Nossas hospedagens</h2>
-<div class="grid" id="hotelcards"></div>
-<p><small>Confirmar a ocupação e a quantidade de quartos de cada reserva. A última noite do grupo de Brasília será organizada separadamente, perto de Malpensa.</small></p>
-</section>
-
-<section id="trens">
-<h2>Viagens de trem</h2>
-<div class="card content tablewrap">
-<table>
-<thead><tr><th>Data</th><th>Trecho</th><th>Horário</th></tr></thead>
-<tbody>
-<tr><td>26/12</td><td>Milão → Florença</td><td>18h09–20h04</td></tr>
-<tr><td>30/12</td><td>Florença → Milão</td><td>20h55–22h51</td></tr>
-<tr><td>03/01</td><td>Milão → Roma</td><td>12h59–16h14</td></tr>
-<tr><td>07/01</td><td>Roma → Nápoles</td><td>08h05–09h18</td></tr>
-<tr><td>09/01</td><td>Nápoles → Milão</td><td>17h25–22h01</td></tr>
-</tbody>
-</table>
-</div>
-</section>
-
-<section id="voos">
-<h2>Voos e transporte</h2>
-<div class="grid">
-<div class="card content">
-<small>30/12 · TAP</small>
-<h3>Chegada do grupo de Brasília</h3>
-<p>TP16: Recife 05h50 → Lisboa 16h20.</p>
-<p>TP828: Lisboa 19h50 → Malpensa 23h35.</p>
-</div>
-<div class="card content">
-<small>10/01 · TAP</small>
-<h3>Retorno do grupo de Brasília</h3>
-<p>TP823: Malpensa 11h55 → Lisboa 13h55.</p>
-<p>TP11: Lisboa 17h00 → Recife 21h55.</p>
-</div>
-<div class="card content">
-<small>25/12 e 03/01 · LATAM</small>
-<h3>Voos de Nanda</h3>
-<p>25/12: LA8072, saída de GRU às 18h05.</p>
-<p>03/01: LA8073, Malpensa 12h10 → GRU 20h10.</p>
-</div>
-<div class="card content">
-<small>10–11/01 · Air France / GOL</small>
-<h3>Glaucio, Malu e Miguel</h3>
-<p>10/01: Linate 09h45 → Paris 11h20.</p>
-<p>Paris 14h25 → Fortaleza 19h40.</p>
-<p>11/01: Fortaleza 02h20 → São Paulo 06h05.</p>
-</div>
-<div class="card content">
-<small>07–08/01 · Ecovia</small>
-<h3>Carro em Nápoles</h3>
-<p>Audi A3 automático ou similar, cinco lugares.</p>
-<p>Retirada em Napoli Centrale, 07/01 às 10h.</p>
-<p>Devolução no Parking P4, Corso Meridionale 60/62, 08/01 às 18h.</p>
-</div>
-<div class="card content">
-<small>Transporte pendente</small>
-<h3>Deslocamento na Campânia</h3>
-<p>Há apenas um carro reservado para um grupo de 11 viajantes. Precisamos organizar transporte complementar e bagagens.</p>
-</div>
-</div>
-</section>
-
-<section id="familia">
-<h2>Uma viagem entre gerações</h2>
-<div class="grid">
-<div class="card content">
-<h3>Núcleo inicial</h3>
-<p>Glaucio, Nanda, Malu e Miguel.</p>
-<p>Nanda retorna ao Brasil em 3 de janeiro.</p>
-</div>
-<div class="card content">
-<h3>Grupo de Brasília</h3>
-<p>Joaquim, Hilda, Perla, Lucas, Gabriel, Giovanni, Marina, Pedro e Arthur.</p>
-<p>O grupo chega em 30 de dezembro. Lucas deixa o roteiro conjunto em 7 de janeiro.</p>
-</div>
-<div class="card content">
-<h3>Datas especiais</h3>
-<p><strong>2 de janeiro:</strong> Miguel completa 16 anos, com passeio a Turim.</p>
-<p><strong>6 de janeiro:</strong> Pedro completa 22 anos, em Roma.</p>
-</div>
-</div>
-
-<div class="notice">
-<strong>Camerota e nossas raízes</strong>
-<p>A visita à região de origem de Alfonso Sansiviero, antepassado da família, é um dos momentos centrais da viagem. Uma oportunidade de compartilhar histórias entre gerações.</p>
-</div>
-
-<div class="notice">
-<strong>Um roteiro para todos</strong>
-<p>Vamos privilegiar pausas, deslocamentos confortáveis e alternativas para quem preferir caminhar menos.</p>
-</div>
-</section>
-
-<section id="preparativos">
-<h2>Preparativos</h2>
-<p>Marque as pendências resolvidas. As marcações são individuais e ficam salvas neste navegador quando possível.</p>
-<div class="check" id="checks"></div>
-<div class="notice">
-<strong>Atenção:</strong> este site é um guia familiar. Confira os horários e condições nos bilhetes e comprovantes antes de viajar.
-</div>
-<button onclick="window.print()">Imprimir / salvar em PDF</button>
-</section>
-
-</main>
-
-<footer>
-<strong>Itália em Família · 2026–2027</strong>
-<p>De geração em geração, nossas histórias continuam.</p>
-<small>Versão 2.0</small>
-</footer>
 
 <script>
-const dias=[
-["25/12","Embarque",[
-"Início da viagem internacional.",
-"Nanda sai de São Paulo às 18h05 (LA8072)."
-]],
-["26/12","Chegada a Florença",[
-"Chegada a Milão e deslocamento até Milano Centrale.",
-"Trem para Florença: 18h09–20h04.",
-"Check-in na Residenza San Lorenzo."
-]],
-["27/12","Florença tranquila",[
-"Duomo, Ponte Vecchio e centro histórico.",
-"Dia leve, com pausas para café e descanso."
-]],
-["28/12","Pisa e Lucca",[
-"Passeio planejado pela Toscana.",
-"Piazza dei Miracoli em Pisa e centro histórico de Lucca.",
-"Horários e transporte a confirmar."
-]],
-["29/12","Arte em Florença",[
-"Visita planejada à Galleria dell'Accademia.",
-"Possível visita aos Uffizi, conforme ingressos."
-]],
-["30/12","Reencontro em Milão",[
-"Trem Florença–Milão: 20h55–22h51.",
-"Grupo de Brasília chega a Malpensa às 23h35.",
-"Traslado noturno e hospedagem no Just Hotel."
-]],
-["31/12","Réveillon",[
-"Descanso para quem chegou tarde.",
-"Passeio leve pelo Duomo.",
-"Celebração de Ano-Novo em família."
-]],
-["01/01","Milão em família",[
-"Dia tranquilo e passeios opcionais.",
-"Refeição em família."
-]],
-["02/01","Turim e aniversário de Miguel",[
-"Passeio de um dia a Turim.",
-"Comemoração dos 16 anos de Miguel.",
-"Conferir os horários dos trens."
-]],
-["03/01","Milão → Roma",[
-"Nanda embarca em Malpensa às 12h10.",
-"Trem Milano Centrale 12h59 → Roma Termini 16h14.",
-"Check-in no Gioberti Art Hotel."
-]],
-["04/01","Roma histórica",[
-"Pantheon, Piazza Navona e Fontana di Trevi.",
-"Passeios com pausas e percursos confortáveis."
-]],
-["05/01","Vaticano",[
-"Basílica de São Pedro.",
-"Museus Vaticanos conforme ingressos e disposição.",
-"Possibilidade de dividir o grupo por ritmo de visita."
-]],
-["06/01","Roma Antiga e aniversário de Pedro",[
-"Coliseu e Fórum Romano, conforme ingressos.",
-"Comemoração dos 22 anos de Pedro.",
-"Epifania: feriado na Itália."
-]],
-["07/01","Nápoles e Camerota",[
-"Roma Termini 08h05 → Napoli Centrale 09h18.",
-"Retirada do carro às 10h.",
-"Organizar transporte complementar para os demais viajantes.",
-"Visita à vila histórica de Camerota.",
-"Pernoite em Marina di Camerota; check-in até 18h."
-]],
-["08/01","Costa Amalfitana e Nápoles",[
-"Saída cedo de Marina di Camerota.",
-"Percurso costeiro condicionado ao clima e trânsito.",
-"Devolução do carro em Nápoles até 18h.",
-"Check-in no I 4 Elementi até 19h, a confirmar."
-]],
-["09/01","Nápoles → Milão",[
-"Passeio por Nápoles sem carro.",
-"Trem para Milão: 17h25–22h01.",
-"Glaucio, Malu e Miguel seguem para Linate.",
-"Demais familiares seguem para hospedagem separada."
-]],
-["10/01","Retorno ao Brasil",[
-"Glaucio, Malu e Miguel: Linate às 09h45.",
-"Grupo de Brasília: Malpensa às 11h55.",
-"Conexões em Paris e Lisboa, respectivamente."
-]],
-["11/01","Chegada ao Brasil",[
-"Conexão durante a madrugada em Fortaleza.",
-"Chegada final prevista a São Paulo às 06h05."
-]]
-];
+(function () {
+  const grupos = [
+    {
+      titulo: "Glaucio, Malu e Miguel",
+      nota: "Malu consta no bilhete como Maria Sansevero.",
+      voos: [
+        ["25/12/2026", "G3 1556", "São Paulo (GRU)",
+         "Fortaleza (FOR)", "13h35", "17h00", "GOL"],
+        ["25–26/12/2026", "G3 5136", "Fortaleza (FOR)",
+         "Paris (CDG)", "21h50", "10h30 (+1 dia)",
+         "Operado pela Air France"],
+        ["26/12/2026", "G3 5262", "Paris (CDG)",
+         "Milão Linate (LIN)", "12h25", "13h55",
+         "Operado pela Air France"],
+        ["10/01/2027", "G3 5270", "Milão Linate (LIN)",
+         "Paris (CDG)", "09h45", "11h20",
+         "Operado pela Air France"],
+        ["10/01/2027", "G3 5038", "Paris (CDG)",
+         "Fortaleza (FOR)", "14h25", "19h40",
+         "Operado pela Air France"],
+        ["11/01/2027", "G3 1559", "Fortaleza (FOR)",
+         "São Paulo (GRU)", "02h20", "06h05", "GOL"]
+      ]
+    },
+    {
+      titulo: "Nanda",
+      nota: "Viagem independente na ida e retorno antecipado.",
+      voos: [
+        ["25–26/12/2026", "LA8072", "São Paulo (GRU)",
+         "Milão Malpensa (MXP)", "18h05",
+         "Chegada a confirmar", "LATAM"],
+        ["03/01/2027", "LA8073", "Milão Malpensa (MXP)",
+         "São Paulo (GRU)", "12h10", "20h10", "LATAM"]
+      ]
+    },
+    {
+      titulo: "Grupo de Brasília",
+      nota: "Joaquim, Hilda, Perla, Gabriel, Lucas, " +
+            "Giovanni, Marina, Pedro e Arthur. " +
+            "Os trechos abaixo são os registrados no roteiro; " +
+            "Lucas se separa do grupo em 07/01.",
+      voos: [
+        ["30/12/2026", "TP16", "Recife (REC)",
+         "Lisboa (LIS)", "05h50", "16h20", "TAP"],
+        ["30/12/2026", "TP828", "Lisboa (LIS)",
+         "Milão Malpensa (MXP)", "19h50", "23h35", "TAP"],
+        ["10/01/2027", "TP823", "Milão Malpensa (MXP)",
+         "Lisboa (LIS)", "11h55", "13h55", "TAP"],
+        ["10/01/2027", "TP11", "Lisboa (LIS)",
+         "Recife (REC)", "17h00", "21h55", "TAP"]
+      ]
+    }
+  ];
 
-const hoteis=[
-["26–30/12","Residenza San Lorenzo","Florença","Via Dell'Ariento 33"],
-["30/12–03/01","Just Hotel Milano","Milão","Via Napo Torriani 29"],
-["03–07/01","Gioberti Art Hotel","Roma","Via Gioberti 23"],
-["07–08/01","La casa di Filomena","Marina di Camerota","Via Nazario Sauro 15 · Check-in até 18h"],
-["08–09/01","I 4 Elementi","Nápoles","Via San Tommaso d'Aquino 33 · Check-in até 19h"],
-["09–10/01","Moxy Milan Linate Airport","Segrate","Para Glaucio, Malu e Miguel"]
-];
+  const destino = document.getElementById("lista-voos");
 
-document.getElementById("hotelcards").innerHTML=
-hoteis.map(h=>`
-<div class="card content">
-<small>${h[0]} · ${h[2]}</small>
-<h3>${h[1]}</h3>
-<p>${h[3]}</p>
-</div>`).join("");
+  grupos.forEach(grupo => {
+    const titulo = document.createElement("h3");
+    titulo.textContent = grupo.titulo;
+    destino.appendChild(titulo);
 
-let atual=0;
-const dates=document.getElementById("dates");
-const detail=document.getElementById("detail");
+    const nota = document.createElement("p");
+    nota.className = "nota";
+    nota.textContent = grupo.nota;
+    destino.appendChild(nota);
 
-function mostrar(i){
-  atual=i;
-  dates.innerHTML=dias.map((d,j)=>`
-    <button class="day ${j===i?'active':''}"
-    data-dia="${j}" aria-pressed="${j===i}">
-    ${d[0]}</button>`).join("");
-  detail.innerHTML=`
-    <small>${dias[i][0]}</small>
-    <h2>${dias[i][1]}</h2>
-    <ul>${dias[i][2].map(t=>`<li>${t}</li>`).join("")}</ul>`;
-  document.getElementById("prev").disabled=i===0;
-  document.getElementById("next").disabled=i===dias.length-1;
-}
+    grupo.voos.forEach(voo => {
+      const card = document.createElement("article");
+      card.className = "voo-card";
 
-dates.addEventListener("click",e=>{
-  const b=e.target.closest("[data-dia]");
-  if(b)mostrar(Number(b.dataset.dia));
-});
-document.getElementById("prev").onclick=()=>mostrar(Math.max(0,atual-1));
-document.getElementById("next").onclick=()=>mostrar(Math.min(dias.length-1,atual+1));
+      const cabecalho = document.createElement("strong");
+      cabecalho.textContent = voo[0] + " · " + voo[1];
 
-const tarefas=[
-"Emitir a Permissão Internacional para Dirigir (PID).",
-"Conferir certificado do seguro RentalCover.",
-"Organizar transporte complementar na Campânia.",
-"Planejar a visita à vila histórica de Camerota.",
-"Conferir ingressos dos museus.",
-"Organizar traslados de Malpensa.",
-"Confirmar quartos e ocupação das hospedagens.",
-"Confirmar check-ins em Camerota e Nápoles.",
-"Reavaliar os tempos do percurso pela Costa Amalfitana."
-];
+      const rota = document.createElement("div");
+      rota.className = "rota";
+      rota.textContent = voo[2] + " → " + voo[3];
 
-document.getElementById("checks").innerHTML=
-tarefas.map((t,i)=>`
-<label><input type="checkbox" data-tarefa="${i}"> ${t}</label>
-`).join("");
+      const detalhe = document.createElement("div");
+      detalhe.className = "detalhe";
+      detalhe.textContent =
+        "Partida: " + voo[4] +
+        " | Chegada: " + voo[5] +
+        " | " + voo[6];
 
-document.querySelectorAll("[data-tarefa]").forEach(el=>{
-  const key="italia2027-tarefa-"+el.dataset.tarefa;
-  try{el.checked=localStorage.getItem(key)==="1"}catch(e){}
-  el.addEventListener("change",()=>{
-    try{localStorage.setItem(key,el.checked?"1":"0")}catch(e){}
+      card.append(cabecalho, rota, detalhe);
+      destino.appendChild(card);
+    });
   });
-});
-
-mostrar(0);
+})();
 </script>
-</body>
-</html>
+<!-- FIM: ATUALIZAÇÃO DE VOOS ITÁLIA 2027 -->
