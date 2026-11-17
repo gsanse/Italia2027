@@ -1,157 +1,32 @@
-
-<!-- INÍCIO: ATUALIZAÇÃO DE VOOS ITÁLIA 2027 -->
+<!DOCTYPE html>
+<html lang="pt-BR"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Itália em Família · 2026–2027</title>
 <style>
-  #voos-familia {
-    max-width: 1100px;
-    margin: 36px auto;
-    padding: 24px;
-    color: #253b32;
-    font-family: system-ui, sans-serif;
-  }
-  #voos-familia h2 { font-size: 2rem; margin-bottom: 8px; }
-  #voos-familia h3 { margin: 26px 0 12px; }
-  #voos-familia .nota { color: #64746c; font-size: .9rem; }
-  #voos-familia .voo-card {
-    background: #fff;
-    border: 1px solid #dce5de;
-    border-radius: 12px;
-    padding: 15px 18px;
-    margin: 10px 0;
-    box-shadow: 0 2px 8px #00000008;
-  }
-  #voos-familia .voo-card strong { color: #245a43; }
-  #voos-familia .rota {
-    font-size: 1.12rem;
-    font-weight: 650;
-    margin: 8px 0;
-  }
-  #voos-familia .detalhe {
-    font-size: .92rem;
-    color: #52665b;
-    line-height: 1.6;
-  }
-  #voos-familia .aviso {
-    padding: 14px;
-    border-left: 4px solid #c19a43;
-    background: #fff9e9;
-    border-radius: 6px;
-    margin-top: 20px;
-  }
-</style>
-
-<section id="voos-familia">
-  <h2>✈️ Voos da família</h2>
-  <p class="nota">
-    Viagem de 25/12/2026 a 11/01/2027.
-    Todos os horários são locais de cada aeroporto.
-  </p>
-
-  <div id="lista-voos"></div>
-
-  <div class="aviso">
-    <strong>Atenção às conexões:</strong>
-    em 26/12, a chegada a Milão Linate está prevista
-    para 13h55, seguida do trem de Milano Centrale
-    para Florença às 18h09.
-    Em 10/01, o voo de retorno parte de Linate
-    às 09h45.
-  </div>
-
-  <p class="nota">
-    Horários sujeitos a alterações pelas companhias.
-    Dados pessoais e localizadores não são publicados.
-  </p>
-</section>
-
+:root{--green:#205540;--bg:#f7f6f0;--muted:#64766b;--line:#dce7df}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);font:16px/1.55 system-ui,-apple-system,sans-serif;color:#26392e}header{padding:62px 18px;text-align:center;color:white;background:linear-gradient(125deg,#153b31,#368263)}header h1{font-size:clamp(2.3rem,7vw,4.2rem);margin:8px 0}header p{margin:7px auto;max-width:760px}nav{position:sticky;top:0;background:white;z-index:3;box-shadow:0 2px 10px #0001;overflow-x:auto}nav div{display:flex;gap:19px;max-width:1100px;margin:auto;padding:13px;white-space:nowrap}nav a{color:var(--green);text-decoration:none;font-weight:700;font-size:.92rem}main{max-width:1100px;margin:auto;padding:18px 16px 60px}section{margin:34px 0 52px;scroll-margin-top:72px}h2,h3{color:var(--green)}h2{font-size:1.7rem}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(255px,1fr));gap:14px}.card,.detail{background:white;border:1px solid var(--line);border-radius:14px;padding:19px}.card{margin:9px 0}.muted{color:var(--muted);font-size:.91rem}.tag{display:inline-block;background:#eaf3ec;color:var(--green);padding:3px 10px;border-radius:18px;font-size:.8rem;font-weight:700}.days{display:grid;grid-template-columns:repeat(auto-fit,minmax(105px,1fr));gap:8px}.day{border:1px solid var(--line);background:white;padding:12px;border-radius:10px;cursor:pointer;text-align:left;color:inherit}.day strong,.day small{display:block}.day small{font-size:.78rem}.day.active,.action{background:var(--green);color:white}.detail{margin-top:15px;min-height:180px}.controls{display:flex;gap:10px;margin-top:12px}.action{border:0;border-radius:8px;padding:10px 16px;cursor:pointer;font:inherit}.flight{border-left:4px solid #3c8264;background:#f5faf6;border-radius:7px;padding:11px;margin:10px 0}.flight strong{color:var(--green)}.notice{border-left:4px solid #bc9543;background:#fff7e6;padding:15px;border-radius:6px;margin:14px 0}.scroll{overflow-x:auto;background:white;border-radius:12px}table{border-collapse:collapse;width:100%}th,td{text-align:left;padding:12px;border-bottom:1px solid var(--line);vertical-align:top}th{background:#eaf3ec}.check{display:block;padding:12px;background:white;border:1px solid var(--line);border-radius:8px;margin:8px 0}.check input{margin-right:10px}footer{text-align:center;background:var(--green);color:white;padding:26px}@media(max-width:550px){.days{grid-template-columns:repeat(3,1fr)}header{padding:45px 15px}}
+</style></head><body>
+<header><p>25 de dezembro de 2026 — 11 de janeiro de 2027</p><h1>🇮🇹 Itália em Família</h1><p>Florença · Pisa · Lucca · Milão · Turim · Roma · Camerota · Costa Amalfitana · Nápoles</p><p>18 dias · encontro de 13 familiares</p></header>
+<nav><div><a href="#calendario">Calendário</a><a href="#voos">Voos</a><a href="#trens">Trens</a><a href="#hoteis">Hotéis</a><a href="#carro">Carro</a><a href="#familia">Família</a><a href="#pendencias">Pendências</a></div></nav>
+<main>
+<section id="calendario"><h2>📅 Calendário completo</h2><p>Toque numa data para consultar o programa do dia.</p><div id="dias" class="days"></div><div id="detalhe" class="detail"></div><div class="controls"><button class="action" onclick="mudarDia(-1)">Anterior</button><button class="action" onclick="mudarDia(1)">Próximo</button></div></section>
+<section id="voos"><h2>✈️ Voos da família</h2><p>Todos os horários são locais. Os seis voos de Glaucio, Malu e Miguel foram conferidos com o bilhete; LATAM e TAP seguem os dados registrados no roteiro e devem ser reconfirmados.</p><div id="listaVoos"></div><div class="notice"><strong>Conexão de 26/12:</strong> chegada a Milão Linate às 13h55 e trem saindo de Milano Centrale às 18h09. Nanda chega pelo aeroporto de Malpensa em voo separado, com horário de chegada a confirmar.</div></section>
+<section id="trens"><h2>🚄 Trens</h2><div class="scroll"><table><thead><tr><th>Data</th><th>Trecho</th><th>Horário</th><th>Situação</th></tr></thead><tbody id="listaTrens"></tbody></table></div></section>
+<section id="hoteis"><h2>🏨 Hospedagens</h2><div id="listaHoteis" class="grid"></div></section>
+<section id="carro"><h2>🚗 Sul da Itália</h2><div class="grid"><article class="card"><span class="tag">07/01</span><h3>Retirada em Nápoles</h3><p>Ecovia, Audi A3 Sportback ou similar, automático, 5 lugares.</p><p><strong>10h00</strong>, Napoli Centrale / Piazza Garibaldi.</p></article><article class="card"><span class="tag">08/01</span><h3>Devolução em Nápoles</h3><p>Até <strong>18h00</strong>, Parking P4, Corso Meridionale 60/62.</p><p>Percurso pela Costa Amalfitana condicionado ao tempo e trânsito.</p></article><article class="card"><h3>Transporte complementar</h3><p>O grupo terá <strong>11 pessoas</strong>, mas apenas um carro de cinco lugares está reservado. É necessário definir transporte adicional e espaço para bagagens.</p></article></div></section>
+<section id="familia"><h2>👨‍👩‍👧‍👦 Família</h2><div class="grid"><article class="card"><h3>Primeiro grupo</h3><p>Glaucio, Nanda (Maria Fernanda), Malu (Maria Sansevero) e Miguel.</p><span class="tag">4 pessoas</span></article><article class="card"><h3>Grupo que chega em 30/12</h3><p>Joaquim, Hilda, Perla, Gabriel, Lucas, Giovanni, Marina, Pedro e Arthur.</p><span class="tag">9 pessoas</span></article><article class="card"><h3>Alterações</h3><p>Nanda retorna em 03/01. Lucas se separa em 07/01.</p><p>13 pessoas até 02/01; 12 até 06/01; 11 a partir de 07/01.</p></article><article class="card"><h3>🎂 Aniversários</h3><p>02/01: Miguel completa 16 anos, com passeio a Turim.</p><p>06/01: Pedro completa 22 anos, em Roma.</p></article></div><p class="muted">Prever pausas e trajetos confortáveis para os familiares mais velhos.</p></section>
+<section id="pendencias"><h2>✅ Pendências de reservas</h2><p>As marcações ficam apenas no navegador utilizado.</p><div id="listaPendencias"></div><button class="action" onclick="limparPendencias()">Limpar marcações</button></section>
+</main><footer><strong>Itália em Família · 2026–2027</strong><p>Versão 3.0 · horários sujeitos a alterações · sem localizadores ou números de bilhete</p></footer>
 <script>
-(function () {
-  const grupos = [
-    {
-      titulo: "Glaucio, Malu e Miguel",
-      nota: "Malu consta no bilhete como Maria Sansevero.",
-      voos: [
-        ["25/12/2026", "G3 1556", "São Paulo (GRU)",
-         "Fortaleza (FOR)", "13h35", "17h00", "GOL"],
-        ["25–26/12/2026", "G3 5136", "Fortaleza (FOR)",
-         "Paris (CDG)", "21h50", "10h30 (+1 dia)",
-         "Operado pela Air France"],
-        ["26/12/2026", "G3 5262", "Paris (CDG)",
-         "Milão Linate (LIN)", "12h25", "13h55",
-         "Operado pela Air France"],
-        ["10/01/2027", "G3 5270", "Milão Linate (LIN)",
-         "Paris (CDG)", "09h45", "11h20",
-         "Operado pela Air France"],
-        ["10/01/2027", "G3 5038", "Paris (CDG)",
-         "Fortaleza (FOR)", "14h25", "19h40",
-         "Operado pela Air France"],
-        ["11/01/2027", "G3 1559", "Fortaleza (FOR)",
-         "São Paulo (GRU)", "02h20", "06h05", "GOL"]
-      ]
-    },
-    {
-      titulo: "Nanda",
-      nota: "Viagem independente na ida e retorno antecipado.",
-      voos: [
-        ["25–26/12/2026", "LA8072", "São Paulo (GRU)",
-         "Milão Malpensa (MXP)", "18h05",
-         "Chegada a confirmar", "LATAM"],
-        ["03/01/2027", "LA8073", "Milão Malpensa (MXP)",
-         "São Paulo (GRU)", "12h10", "20h10", "LATAM"]
-      ]
-    },
-    {
-      titulo: "Grupo de Brasília",
-      nota: "Joaquim, Hilda, Perla, Gabriel, Lucas, " +
-            "Giovanni, Marina, Pedro e Arthur. " +
-            "Os trechos abaixo são os registrados no roteiro; " +
-            "Lucas se separa do grupo em 07/01.",
-      voos: [
-        ["30/12/2026", "TP16", "Recife (REC)",
-         "Lisboa (LIS)", "05h50", "16h20", "TAP"],
-        ["30/12/2026", "TP828", "Lisboa (LIS)",
-         "Milão Malpensa (MXP)", "19h50", "23h35", "TAP"],
-        ["10/01/2027", "TP823", "Milão Malpensa (MXP)",
-         "Lisboa (LIS)", "11h55", "13h55", "TAP"],
-        ["10/01/2027", "TP11", "Lisboa (LIS)",
-         "Recife (REC)", "17h00", "21h55", "TAP"]
-      ]
-    }
-  ];
-
-  const destino = document.getElementById("lista-voos");
-
-  grupos.forEach(grupo => {
-    const titulo = document.createElement("h3");
-    titulo.textContent = grupo.titulo;
-    destino.appendChild(titulo);
-
-    const nota = document.createElement("p");
-    nota.className = "nota";
-    nota.textContent = grupo.nota;
-    destino.appendChild(nota);
-
-    grupo.voos.forEach(voo => {
-      const card = document.createElement("article");
-      card.className = "voo-card";
-
-      const cabecalho = document.createElement("strong");
-      cabecalho.textContent = voo[0] + " · " + voo[1];
-
-      const rota = document.createElement("div");
-      rota.className = "rota";
-      rota.textContent = voo[2] + " → " + voo[3];
-
-      const detalhe = document.createElement("div");
-      detalhe.className = "detalhe";
-      detalhe.textContent =
-        "Partida: " + voo[4] +
-        " | Chegada: " + voo[5] +
-        " | " + voo[6];
-
-      card.append(cabecalho, rota, detalhe);
-      destino.appendChild(card);
-    });
-  });
-})();
-</script>
-<!-- FIM: ATUALIZAÇÃO DE VOOS ITÁLIA 2027 -->
+const dados={"days":[["25/12","Embarques","Glaucio, Malu e Miguel: G3 1556, GRU 13h35 → Fortaleza 17h00; G3 5136, Fortaleza 21h50 → Paris 10h30 (26/12).|Nanda: LA8072, GRU 18h05 → Milão Malpensa; chegada a confirmar."],["26/12","Chegada e Florença","Glaucio, Malu e Miguel: G3 5262, Paris CDG 12h25 → Milão Linate 13h55.|Nanda chega a Malpensa em voo separado; confirmar horário e encontro.|Trem Milano Centrale 18h09 → Firenze SMN 20h04.|Check-in Residenza San Lorenzo Firenze."],["27/12","Florença leve","Duomo, Piazza della Signoria e Ponte Vecchio, com pausas e ritmo leve após a viagem."],["28/12","Pisa e Lucca","Bate-volta de trem para Pisa e Lucca; horários regionais a definir.|Piazza dei Miracoli, centro de Lucca e muralhas."],["29/12","Arte em Florença","Galleria dell’Accademia (ingresso a confirmar), San Lorenzo e Mercado Central.|Uffizi opcional."],["30/12","Milão e reencontro","Trem Firenze SMN 20h55 → Milano Centrale 22h51.|Grupo de Brasília: TP16 Recife 05h50 → Lisboa 16h20; TP828 Lisboa 19h50 → Milão Malpensa 23h35.|Just Hotel Milano; chegada tardia do grupo TAP."],["31/12","Réveillon","Milão, passeios tranquilos e comemoração de Ano-Novo em família.|Confirmar restaurante e deslocamentos."],["01/01","Família em Milão","Dia de descanso e refeição em família; verificar horários de feriado."],["02/01","Turim e Miguel","Aniversário de 16 anos do Miguel.|Trem Milano Centrale 07h54 → Torino Porta Nuova 09h00; volta 19h00 → 20h00."],["03/01","Roma e Nanda","Nanda retorna: LA8073, MXP 12h10 → GRU 20h10.|Demais viajantes: Frecciarossa 9631, Milano Centrale 12h59 → Roma Termini 16h14.|Check-in Gioberti Art Hotel."],["04/01","Roma histórica","Passeios pelo centro histórico, fontes e praças, com pausas frequentes."],["05/01","Vaticano","Basílica de São Pedro; Museus Vaticanos conforme ingressos e acessibilidade."],["06/01","Coliseu e Pedro","Aniversário de 22 anos do Pedro.|Coliseu e Fórum Romano; conferir ingressos e feriado da Epifania."],["07/01","Camerota","Lucas se separa do grupo.|Trem Roma Termini 08h05 → Napoli Centrale 09h18.|Retirada de um carro Ecovia às 10h00; transporte complementar para o grupo ainda pendente.|Visita à vila ancestral de Camerota.|La casa di Filomena, check-in 14h–18h."],["08/01","Costa Amalfitana","Marina di Camerota → Costa Amalfitana → Nápoles, conforme condições de trânsito.|Devolução do carro até 18h00, Corso Meridionale 60/62.|I 4 Elementi, check-in 12h–19h."],["09/01","Nápoles e Milão","Nápoles sem carro.|Trem Napoli Centrale 17h25 → Milano Centrale 22h01.|Glaucio, Malu e Miguel: Moxy Milan Linate Airport.|Grupo TAP: hotel próximo a Malpensa a confirmar."],["10/01","Voos de retorno","Glaucio, Malu e Miguel: G3 5270 LIN 09h45 → CDG 11h20; G3 5038 CDG 14h25 → FOR 19h40.|Grupo TAP: TP823 MXP 11h55 → LIS 13h55; TP11 LIS 17h00 → REC 21h55.|Retorno individual de Lucas a confirmar."],["11/01","Chegada ao Brasil","Glaucio, Malu e Miguel: G3 1559, Fortaleza 02h20 → Guarulhos 06h05."]],"flights":[["Glaucio, Malu e Miguel","Reserva aérea conferida; Malu é Maria Sansevero.",[["25/12","G3 1556","GRU","FOR","13h35","17h00","GOL"],["25–26/12","G3 5136","FOR","CDG","21h50","10h30 (+1 dia)","Air France (operadora)"],["26/12","G3 5262","CDG","LIN","12h25","13h55","Air France (operadora)"],["10/01","G3 5270","LIN","CDG","09h45","11h20","Air France (operadora)"],["10/01","G3 5038","CDG","FOR","14h25","19h40","Air France (operadora)"],["11/01","G3 1559","FOR","GRU","02h20","06h05","GOL"]]],["Nanda","Horários registrados no roteiro; conferir bilhetes e chegada.",[["25–26/12","LA8072","GRU","MXP","18h05","A confirmar","LATAM"],["03/01","LA8073","MXP","GRU","12h10","20h10","LATAM"]]],["Grupo de Brasília (saída de Recife)","Joaquim, Hilda, Perla, Gabriel, Lucas, Giovanni, Marina, Pedro e Arthur. Lucas se separa em 07/01; retorno individual a confirmar.",[["30/12","TP16","REC","LIS","05h50","16h20","TAP"],["30/12","TP828","LIS","MXP","19h50","23h35","TAP"],["10/01","TP823","MXP","LIS","11h55","13h55","TAP"],["10/01","TP11","LIS","REC","17h00","21h55","TAP"]]]],"trains":[["26/12","Milano Centrale → Firenze SMN","18h09–20h04","Reservado"],["28/12","Florença → Pisa → Lucca → Florença","A definir","Planejado"],["30/12","Firenze SMN → Milano Centrale","20h55–22h51","Reservado"],["02/01","Milano Centrale → Torino Porta Nuova","07h54–09h00","Registrado no TripIt"],["02/01","Torino Porta Nuova → Milano Centrale","19h00–20h00","Registrado no TripIt"],["03/01","Milano Centrale → Roma Termini, FR 9631","12h59–16h14","Reservado"],["07/01","Roma Termini → Napoli Centrale","08h05–09h18","Reservado"],["09/01","Napoli Centrale → Milano Centrale","17h25–22h01","Reservado"]],"hotels":[["26–30/12","Florença","Residenza San Lorenzo Firenze","Via Dell’Ariento 33","4 pessoas"],["30/12–03/01","Milão","Just Hotel Milano","Via Napo Torriani 29","Conferir quartos para 13 pessoas"],["03–07/01","Roma","Gioberti Art Hotel","Via Gioberti 23","Conferir quartos para 12 pessoas"],["07–08/01","Marina di Camerota","La casa di Filomena","Via Nazario Sauro 15","Check-in 14h–18h; conferir capacidade para 11 pessoas"],["08–09/01","Nápoles","I 4 Elementi","Via San Tommaso d’Aquino 33","Check-in 12h–19h; conferir capacidade"],["09–10/01","Linate","Moxy Milan Linate Airport","Via Circonvallazione Idro, Segrate","Glaucio, Malu e Miguel"],["09–10/01","Malpensa","Hotel a confirmar","Próximo a MXP","Grupo TAP"]],"pending":["Conferir chegada da Nanda a Malpensa e seus bilhetes LATAM","Conferir bilhetes TAP e retorno individual de Lucas","Conferir quartos do grupo em Milão e Roma","Resolver transporte para 11 pessoas nos dias 7 e 8/01 (apenas um carro de 5 lugares reservado)","Conferir capacidade da hospedagem em Camerota","Conferir capacidade da hospedagem em Nápoles","Reservar ou confirmar hotel próximo a Malpensa em 09/01","Conferir depósito, seguro, CNH e PID do carro","Reservar ingressos da Accademia, Vaticano e Coliseu","Avaliar ingressos dos Uffizi e da Última Ceia","Definir trens regionais para Pisa e Lucca"]};
+const $=id=>document.getElementById(id);
+function el(tag,text,cls){const x=document.createElement(tag);if(text!==undefined)x.textContent=text;if(cls)x.className=cls;return x}
+let diaAtual=0;
+function mostrarDia(){const area=$("dias");area.replaceChildren();dados.days.forEach((d,i)=>{const b=el("button",undefined,"day"+(i===diaAtual?" active":""));b.type="button";b.append(el("strong",d[0]),el("small",d[1]));b.onclick=()=>{diaAtual=i;mostrarDia()};area.append(b)});const d=dados.days[diaAtual],p=$("detalhe");p.replaceChildren(el("h3",d[0]+" — "+d[1]));const ul=el("ul");d[2].split("|").forEach(s=>ul.append(el("li",s)));p.append(ul)}
+function mudarDia(n){diaAtual=Math.max(0,Math.min(dados.days.length-1,diaAtual+n));mostrarDia()}
+function mostrarVoos(){dados.flights.forEach(g=>{const card=el("article",undefined,"card");card.append(el("h3",g[0]),el("p",g[1],"muted"));g[2].forEach(v=>{const f=el("div",undefined,"flight");f.append(el("strong",v[0]+" · "+v[1]),el("div",v[2]+" → "+v[3]),el("div","Partida "+v[4]+" · Chegada "+v[5]+" · "+v[6],"muted"));card.append(f)});$("listaVoos").append(card)})}
+function mostrarTrens(){dados.trains.forEach(t=>{const tr=el("tr");t.forEach(v=>tr.append(el("td",v)));$("listaTrens").append(tr)})}
+function mostrarHoteis(){dados.hotels.forEach(h=>{const c=el("article",undefined,"card");c.append(el("span",h[0],"tag"),el("h3",h[2]),el("p",h[1]+" · "+h[3]),el("p",h[4],"muted"));$("listaHoteis").append(c)})}
+const chave="italia2027-pendencias-v3";let marcados={};try{marcados=JSON.parse(localStorage.getItem(chave)||"{}")}catch(e){}
+function mostrarPendencias(){$("listaPendencias").replaceChildren();dados.pending.forEach((s,i)=>{const l=el("label",undefined,"check"),c=el("input");c.type="checkbox";c.checked=!!marcados[i];c.onchange=()=>{marcados[i]=c.checked;try{localStorage.setItem(chave,JSON.stringify(marcados))}catch(e){}};l.append(c,el("span",s));$("listaPendencias").append(l)})}
+function limparPendencias(){if(confirm("Limpar todas as marcações?")){marcados={};try{localStorage.removeItem(chave)}catch(e){}mostrarPendencias()}}
+mostrarDia();mostrarVoos();mostrarTrens();mostrarHoteis();mostrarPendencias();
+</script></body></html>
