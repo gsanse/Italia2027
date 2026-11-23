@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-22",
+  "updatedAt": "2026-11-23",
   "description": "Status oficial das pendências; alterações publicadas no repositório GitHub.",
   "items": [
     {
@@ -35,7 +35,7 @@
     },
     {
       "id": "p06",
-      "title": "Corrigir a ocupação registrada do quarto de Perla em Marina di Camerota",
+      "title": "Corrigir a ocupação registrada do quarto de Perla em Marina di Camerota Confirmar também o acesso ao quarto de Joaquim e Hilda.",
       "category": "Hospedagem",
       "status": "pendente"
     },
@@ -95,8 +95,8 @@
     },
     {
       "id": "p16",
-      "title": "Confirmar bilhete doméstico de Marina, trem Roma–Nápoles de 07/01 e acessibilidade em Camerota. O trem Nápoles–Milão de Giovanni, Marina, Pedro e Arthur em 09/01 já está confirmado.",
-      "category": "Hospedagem",
+      "title": "Confirmar o bilhete doméstico de Marina.",
+      "category": "Transporte",
       "status": "pendente"
     }
   ]
