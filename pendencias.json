@@ -4,99 +4,135 @@
   "description": "Status oficial das pendências; alterações publicadas no repositório GitHub.",
   "items": [
     {
-      "id": "p01",
-      "title": "Confirmar se o LA3496 Brasília–Recife e os voos TAP estão no mesmo bilhete e como será o despacho de bagagens",
-      "category": "Transporte",
-      "status": "pendente"
-    },
-    {
-      "id": "p02",
-      "title": "Conferir no bilhete o horário estimado de chegada da Nanda (MXP 09h25) e organizar encontro em Milano Centrale",
-      "category": "Transporte",
-      "status": "pendente"
-    },
-    {
-      "id": "p03",
-      "title": "Conferir os bilhetes TAP do grupo",
+      "id": "p05",
+      "title": "07–08/01 · Definir veículo(s) ou transfer e espaço para as malas dos oito viajantes que seguem com Perla e Giovanni. O carro Ecovia já atende a Glaucio, Malu e Miguel.",
       "category": "Transporte",
       "status": "pendente"
     },
     {
       "id": "p04",
-      "title": "Conferir a ocupação efetiva dos quartos do núcleo de Giovanni em Roma",
+      "title": "03–07/01 · Gioberti Art Hotel, Roma. Pedir confirmação escrita para Giovanni, Marina, Pedro e Arthur: os dois quartos registram apenas um adulto cada.",
       "category": "Hospedagem",
-      "status": "pendente"
-    },
-    {
-      "id": "p05",
-      "title": "Resolver transporte para 11 pessoas nos dias 7 e 8/01 (apenas um carro de 5 lugares reservado)",
-      "category": "Transporte",
       "status": "pendente"
     },
     {
       "id": "p06",
-      "title": "Corrigir a ocupação registrada do quarto de Perla em Marina di Camerota Confirmar também o acesso ao quarto de Joaquim e Hilda.",
+      "title": "07/01 · La casa di Filomena, Marina di Camerota. Corrigir de dois para quatro os hóspedes da reserva de Perla, Gabriel, Joaquim e Hilda.",
       "category": "Hospedagem",
       "status": "pendente"
     },
     {
-      "id": "p07",
-      "title": "Reconfirmar distribuição dos quartos e horários de check-in em Nápoles",
+      "id": "p17",
+      "title": "07/01 · Confirmar com a La casa di Filomena o andar e o acesso ao quarto de Joaquim e Hilda. A indicação de escadas no comprovante é do quarto de Giovanni.",
       "category": "Hospedagem",
-      "status": "pendente"
-    },
-    {
-      "id": "p08",
-      "title": "Confirmar transfer entre o ibis Milano Malpensa Aeroporto e o terminal em 10/01",
-      "category": "Hospedagem",
-      "status": "pendente"
-    },
-    {
-      "id": "p09",
-      "title": "Conferir depósito, seguro, CNH e PID do carro",
-      "category": "Documentação",
-      "status": "pendente"
-    },
-    {
-      "id": "p10",
-      "title": "Reservar ingressos da Accademia, Vaticano e Coliseu",
-      "category": "Passeios",
-      "status": "pendente"
-    },
-    {
-      "id": "p11",
-      "title": "Avaliar ingressos dos Uffizi e da Última Ceia",
-      "category": "Passeios",
-      "status": "pendente"
-    },
-    {
-      "id": "p12",
-      "title": "Definir trens regionais para Pisa e Lucca",
-      "category": "Transporte",
       "status": "pendente"
     },
     {
       "id": "p13",
-      "title": "Corrigir ocupação do Gioberti Art Hotel (03–07/01) e do ibis Milano Malpensa (09–10/01) para quatro hóspedes no núcleo de Giovanni: PDFs indicam somente dois adultos em dois quartos.",
-      "category": "Hospedagem",
-      "status": "pendente"
-    },
-    {
-      "id": "p14",
-      "title": "Confirmar a distribuição dos hóspedes e camas nos dois quartos do Napolit'amo de Giovanni (08–09/01); PDFs nomeiam Giovanni em ambos.",
+      "title": "09/01 · ibis Milano Malpensa. Ajustar de dois para quatro os hóspedes nos quartos de Giovanni, Marina, Pedro e Arthur. A reserva separada de Perla, Gabriel, Joaquim e Hilda já registra quatro adultos.",
       "category": "Hospedagem",
       "status": "pendente"
     },
     {
       "id": "p15",
-      "title": "Reconfirmar horário vigente do LA3496 em 29/12: bilhete de Giovanni/Pedro/Arthur indica 20h55–23h30, roteiro indica alteração para 21h55–00h30.",
+      "title": "29/12 · LA3496 Brasília–Recife. Verificar quais reservas receberam a alteração para 21h55–00h30. Os bilhetes originais de Perla, Gabriel, Joaquim, Hilda, Giovanni, Pedro e Arthur trazem 20h55–23h30.",
+      "category": "Transporte",
+      "status": "pendente"
+    },
+    {
+      "id": "p01",
+      "title": "30/12 · Conexão em Recife. Conferir nas reservas LATAM/TAP se será preciso retirar as malas e despachá-las novamente antes do TP16 das 05h50.",
+      "category": "Transporte",
+      "status": "pendente"
+    },
+    {
+      "id": "p03",
+      "title": "30/12 e 10/01 · O grupo já confirmou os voos TAP. Conferir nomes e horários nos bilhetes individuais da ida e de quem retorna com o grupo.",
       "category": "Transporte",
       "status": "pendente"
     },
     {
       "id": "p16",
-      "title": "Confirmar o bilhete doméstico de Marina.",
+      "title": "29/12 e 11/01 · Identificar os trechos domésticos de Marina entre Brasília e Recife nas reservas dela.",
       "category": "Transporte",
+      "status": "pendente"
+    },
+    {
+      "id": "p02",
+      "title": "26/12 · Conferir a chegada de Nanda a Malpensa (09h25 previstos) e combinar o encontro em Milano Centrale com o grupo que chega a Linate.",
+      "category": "Transporte",
+      "status": "pendente"
+    },
+    {
+      "id": "p18",
+      "title": "02/01 · Turim. Conferir apenas os bilhetes de Perla, Gabriel e Lucas. Os quatro Frecciarossa e os seis Italo de cada sentido já estão documentados.",
+      "category": "Transporte",
+      "status": "pendente"
+    },
+    {
+      "id": "p08",
+      "title": "10/01 · Combinar horário, capacidade e valor do traslado do ibis para Malpensa para os oito viajantes do grupo TAP.",
+      "category": "Transporte",
+      "status": "pendente"
+    },
+    {
+      "id": "p12",
+      "title": "28/12 · Escolher os horários dos trens regionais Florença–Pisa–Lucca–Florença.",
+      "category": "Transporte",
+      "status": "pendente"
+    },
+    {
+      "id": "p14",
+      "title": "08/01 · Napolit’amo Hotel Medina, Nápoles. Confirmar nomes e camas nos dois quartos em nome de Giovanni. A hospedagem dos onze viajantes na cidade já está identificada.",
+      "category": "Hospedagem",
+      "status": "pendente"
+    },
+    {
+      "id": "p07",
+      "title": "08/01 · Combinar a chegada aos dois hotéis de Nápoles. Para Glaucio, Malu e Miguel, a devolução do carro é até 18h e o check-in do B&B I 4 Elementi termina às 19h.",
+      "category": "Hospedagem",
+      "status": "pendente"
+    },
+    {
+      "id": "p09",
+      "title": "07/01 · Glaucio: conferir documentos e cobertura da locação e levar cartão de crédito próprio com limite para a caução de € 950 indicada pela Ecovia.",
+      "category": "Documentação",
+      "status": "pendente"
+    },
+    {
+      "id": "p10",
+      "title": "29/12 · Confirmar o ingresso da Accademia, em Florença.",
+      "category": "Passeios",
+      "status": "pendente"
+    },
+    {
+      "id": "p11",
+      "title": "31/12 · Confirmar ingresso para a Última Ceia em Milão. O roteiro prevê visita às 15h e chegada às 14h30.",
+      "category": "Passeios",
+      "status": "pendente"
+    },
+    {
+      "id": "p19",
+      "title": "05/01 · Reservar ou confirmar a entrada das 09h nos Museus Vaticanos.",
+      "category": "Passeios",
+      "status": "pendente"
+    },
+    {
+      "id": "p20",
+      "title": "06/01 · Reservar ou confirmar ingresso matinal para o Coliseu.",
+      "category": "Passeios",
+      "status": "pendente"
+    },
+    {
+      "id": "p21",
+      "title": "29/12 · Uffizi é opcional. Decidir se entra no dia antes de comprar ingresso.",
+      "category": "Passeios",
+      "status": "pendente"
+    },
+    {
+      "id": "p22",
+      "title": "03 e 04/01 · Se a família mantiver os jantares do roteiro de Lucas, verificar reservas no Mariuccia e na Osteria da Fortunata, respectivamente.",
+      "category": "Passeios",
       "status": "pendente"
     }
   ]
