@@ -89,7 +89,7 @@
     },
     {
       "id": "p07",
-      "title": "08/01 · Combinar a chegada aos dois hotéis de Nápoles. Para Glaucio, Malu e Miguel, a devolução do carro é até 18h e o check-in do B&B I 4 Elementi termina às 19h.",
+      "title": "08/01 · Combinar a chegada aos dois hotéis de Nápoles. Para Glaucio, Malu e Miguel, a devolução do carro é até 18h e o check-in do B&B I 4 Elementi termina às 19h. O B&B pede aviso antecipado do horário de chegada.",
       "category": "Hospedagem",
       "status": "pendente"
     },
@@ -133,6 +133,30 @@
       "id": "p22",
       "title": "03 e 04/01 · Se a família mantiver os jantares do roteiro de Lucas, verificar reservas no Mariuccia e na Osteria da Fortunata, respectivamente.",
       "category": "Passeios",
+      "status": "pendente"
+    },
+    {
+      "id": "p23",
+      "category": "Documentação",
+      "title": "Glaucio, Perla e Giovanni já solicitaram a PID. Confirmar o recebimento das três permissões antes da viagem.",
+      "status": "pendente"
+    },
+    {
+      "id": "p24",
+      "category": "Hospedagem",
+      "title": "26/12 · Informar à Residenza San Lorenzo Firenze a chegada após o trem das 20h04 e combinar a entrega das chaves.",
+      "status": "pendente"
+    },
+    {
+      "id": "p25",
+      "category": "Hospedagem",
+      "title": "07/01 · La casa di Filomena: avisar a hora de chegada e conferir o pré-pagamento por transferência indicado no voucher de Glaucio.",
+      "status": "pendente"
+    },
+    {
+      "id": "p26",
+      "category": "Transporte",
+      "title": "03/01 · Localizar os comprovantes de Perla, Gabriel e Lucas para Milão–Roma. Há bilhetes nominais conferidos para os outros nove viajantes.",
       "status": "pendente"
     }
   ]
