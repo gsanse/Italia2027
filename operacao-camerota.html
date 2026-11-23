@@ -166,6 +166,105 @@ section h2{letter-spacing:-.018em}
 
 /* Galeria resiliente: sem imagens externas na capa e com ilustração local */
 .mission-art figure{position:relative;overflow:hidden;background:#e0d6bd;min-height:145px}.mission-art figure img{width:100%;height:100%;object-fit:cover}.mission-art-poster{background:linear-gradient(170deg,#d9e9e8 0%,#d4e3cb 54%,#e4be91 55%,#a8c9d2 85%)!important}.mission-poster-landscape{height:100%;min-height:180px;display:flex;align-items:center;justify-content:center;font-size:clamp(3rem,6vw,5rem);position:relative;text-shadow:1px 2px 3px #566e6844}.mission-poster-landscape span{position:absolute;bottom:8%;right:12%;font-size:.65em}.mission-art img[hidden]{display:none!important}
+
+/* Cinematografia italiana clássica — paleta coordenada, edição 2026 */
+:root{
+  --green:#27463d;--bg:#eee4d1;--muted:#675e50;--line:#d4c1a2;
+  --film-red:#a04435;--film-gold:#c99b54;--film-ink:#263b35;
+  --cinema-paper:#faf3e6;--cinema-ivory:#fffaf0;--cinema-dark:#20342f;
+  --cinema-rust:#a04435;--cinema-petrol:#365d60;--cinema-olive:#69745a;
+}
+body{
+  color:#34352e;
+  background:
+    radial-gradient(ellipse at 12% 2%,#fff9ed9c 0,transparent 32%),
+    repeating-linear-gradient(0deg,#4c382703 0px,#4c382703 1px,transparent 1px,transparent 6px),
+    #eee4d1;
+}
+header{
+  background:
+    radial-gradient(ellipse at 78% 42%,#69807144,transparent 53%),
+    linear-gradient(125deg,#1d322d 4%,#34534b 65%,#263c38);
+  border-bottom:7px solid #ad553c;
+}
+.mission-hero:before{opacity:.07}
+.mission-title{color:#f5e5c5;text-shadow:3px 4px 0 #793c2c}
+.mission-title span{color:#e5bb89}
+.mission-eyebrow,.mission-date{color:#e5c99b}
+.mission-film{background:#a04435;color:#fff8e9;box-shadow:5px 5px 0 #132b27}
+.mission-actions a{background:#e9c98f;color:#21372f;border:1px solid #e7cc99}
+.mission-actions a.secondary{background:#1f3731b8;color:#fff5df;border-color:#e3c69d}
+.mission-actions a:hover{background:#f5dcaa;color:#23372e}
+.mission-actions a.secondary:hover{background:#344e43;color:#fff8e9}
+.mission-art figure{border-color:#f3e5cd;background:#e1cfaa;box-shadow:0 9px 16px #101c1a70}
+.mission-art figcaption{background:#f3e5cd;color:#49382d}
+.mission-stamp{background:#a04435;color:#fff3d9;border-color:#e5bd7d}
+nav{background:#f9f0de;border-bottom:3px solid #a04435;box-shadow:0 3px 12px #34251c20}
+nav a{color:#29453c;background:#f1e3ca}
+nav a:hover,nav a[aria-current="location"]{background:#35554b;color:#fff8e9}
+section{border-top-color:#c9b99b}
+section h2,h2,h3{color:#2d4b40}
+.section-take{color:#755442}
+.mission-chapters{color:#9c4638}
+.mission-intro{background:linear-gradient(150deg,#fff9ed,#f3e7cf);border-color:#d4bd96;border-top-color:#a04435;color:#3e3b32}
+.mission-intro h2{color:#2c483e}
+.mission-intro h3{color:#963f33}
+.mission-intro .intro-kicker{color:#934437}
+.card,.detail,.scroll,.check,.pend-item,#atracoes .atracao{
+  background:#fffaf0;border-color:#d7c4a4;
+  box-shadow:0 5px 17px #3d302014;
+}
+.card h3,.detail h3{color:#315247}
+.tag,#atracoes .atracao-body .data{background:#eae0c7;color:#634b31}
+#atracoes .atracao{border-radius:8px!important;box-shadow:4px 6px 0 #d8c5a4}
+#atracoes .atracao-art{background:linear-gradient(140deg,#c2cbb7,#d8bea0)}
+#atracoes .atracao-body .meta,.muted{color:#675e50}
+#atracoes .foto-credito,#origens-camerota a,.atracao-roteiro{color:#315d5a}
+#familia .pessoa-card{
+  background:linear-gradient(#ecddc3 0 32%,#fff7e6 32%);
+  border-color:#fff8e9;outline-color:#cbb186;
+  box-shadow:4px 6px 0 #c1a47d,0 12px 22px #46321a18;
+}
+#familia .pessoa-avatar{background:radial-gradient(circle at 30% 25%,#efd49e,#a5b9a8 64%,#6a8072);outline-color:#b99159}
+#familia .pessoa-card:before{color:#8e4536}
+#familia .pessoa-card:after{color:#ad7844}
+#familia .pessoa-card h3{color:#2d493f}
+#familia .pessoa-card p{color:#785443}
+#familia .familia-info .card{background:#fbf0da;border-left-color:#a04435}
+#familia .familia-info h3{color:#904536}
+.mission-status article{background:#fbf0db;border-color:#d2bc99;border-top-color:#a04435}
+.mission-status strong{color:#2e5044}
+.mission-note,.notice{background:#f8e8cb;border-left-color:#af7a41;color:#4c4034}
+.mission-jump a{background:#fbf0d9;color:#2f4c42;border-color:#d2b58b}
+.mission-jump a:hover{background:#eddbba}
+.days .day{background:#fff9ee;border:1px solid #d8c6a7;color:#3e3a32}
+.days .day:hover{border-color:#9a7658;background:#fcf0da}
+.days .day.active{background:#325448;border-color:#325448;color:#fff8e9;box-shadow:inset 0 0 0 2px #e2c491}
+.days .day.active small{color:#fff7e6}
+.day-photo{background:linear-gradient(135deg,#bec9b9,#ead8bd)}
+.action{background:#325448;color:#fff9ea}
+.action:hover{background:#244239;color:#fff9ea}
+.flight{background:#f4eee0;border-left-color:#54766a}
+.flight strong{color:#315748}
+th{background:#e9ddc5;color:#35493f}
+tr:nth-child(even) td{background:#fbf4e7}
+th,td{border-bottom-color:#d5c4a9}
+.pend-item{background:#fffaf0}
+.pend-tag{background:#eae0cd;color:#4b4b3c}
+.pend-status-pendente{background:#f4e5ca;color:#76501f}
+.pend-status-andamento{background:#e0ebe9;color:#345966}
+.pend-status-resolvido{background:#e1ebd9;color:#406340}
+.pend-toolbar select{background:#fff9ed;border-color:#cdb796;color:#34352e}
+.quick-nav{background:#f9f0df;border-top-color:#c2a985}
+.quick-nav a{color:#2d4a3f}
+.quick-nav a:active{background:#e6d7bb}
+#rota .mapa-estatico{background:#fff8e9;border-color:#fff8e9}
+#rota .mapa-estatico figcaption{background:#f5ebd9;color:#66594a}
+footer{background:#223c35;color:#f7e9d1;border-top:5px solid #a04435}
+a{accent-color:#a04435}
+a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible{outline:3px solid #b67d3d;outline-offset:3px}
+@media(min-width:1000px){nav a{background:transparent}nav a:hover{background:#e6d7bb;color:#30493e}}
+@media(prefers-reduced-motion:reduce){#atracoes .atracao{transition:none}}
 </style></head><body>
 <header><div class="mission-hero"><div class="mission-copy"><div class="mission-eyebrow">Uma comédia familiar baseada em fatos reais · Itália 2026–2027</div><h1 class="mission-title">Operação <span>Camerota</span></h1><div class="mission-film">MISSÃO (QUASE) IMPOSSÍVEL</div><p class="mission-sub">13 viajantes. 3 gerações. 1 destino.<br><strong>E ninguém sabe quem está com os bilhetes.</strong></p><p class="mission-date">26 DE DEZEMBRO DE 2026 — 10 DE JANEIRO DE 2027</p><div class="mission-actions"><a href="#familia">Conheça o elenco</a><a href="#calendario" class="secondary">Plano da missão</a><a href="./index.html" class="secondary">Ver versão clássica</a></div></div><div class="mission-art" aria-label="Galeria de fotografias locais e mapa da viagem"><div class="mission-stamp">ITALIA<br>2026–27</div><figure><img src="./LUCCA.jpg" alt="Piazza dell’Anfiteatro em Lucca" loading="eager" onerror="this.hidden=true"><figcaption>Lucca</figcaption></figure><figure><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Michelangelo%27s_David_%28Galleria_dell%27Accademia%2C_Firenze%2C_Italy%29.jpg/960px-Michelangelo%27s_David_%28Galleria_dell%27Accademia%2C_Firenze%2C_Italy%29.jpg" alt="David de Michelangelo em Florença" loading="eager" onerror="this.hidden=true"><figcaption>Firenze</figcaption></figure><figure><img src="./mapa-sanseveros-italia-2026-2027.png" alt="Mapa ilustrado da viagem da família pela Itália" loading="eager" onerror="this.hidden=true"><figcaption>Il grande viaggio</figcaption></figure><figure class="mission-art-poster" aria-label="Cartaz ilustrativo de Camerota"><div class="mission-poster-landscape" aria-hidden="true">🏘️<span>🌊</span></div><figcaption>Camerota</figcaption></figure></div></div></header>
 <nav><div><a href="./index.html" aria-label="Voltar à versão clássica">↩ Versão clássica</a><a href="#introducao">Prólogo</a><a href="#rota">Mapa</a><a href="#familia">🎬 Elenco</a><a href="#situacao">📌 Situação</a><a href="#atracoes">Atrações</a><a href="#calendario">Calendário</a><a href="#origens-camerota">Origens</a><a href="#sugestoes-lucas">📋 Roteiro detalhado</a><a href="#voos">Voos</a><a href="#trens">Trens</a><a href="#hoteis">Hotéis</a><a href="#carro">Carro</a><a href="#pendencias">Pendências</a></div></nav>
