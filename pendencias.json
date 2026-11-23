@@ -1,0 +1,103 @@
+{
+  "version": 1,
+  "updatedAt": "2026-11-22",
+  "description": "Status oficial das pendências; alterações publicadas no repositório GitHub.",
+  "items": [
+    {
+      "id": "p01",
+      "title": "Confirmar se o LA3496 Brasília–Recife e os voos TAP estão no mesmo bilhete e como será o despacho de bagagens",
+      "category": "Transporte",
+      "status": "pendente"
+    },
+    {
+      "id": "p02",
+      "title": "Conferir no bilhete o horário estimado de chegada da Nanda (MXP 09h25) e organizar encontro em Milano Centrale",
+      "category": "Transporte",
+      "status": "pendente"
+    },
+    {
+      "id": "p03",
+      "title": "Conferir bilhetes TAP e retorno individual de Lucas",
+      "category": "Transporte",
+      "status": "pendente"
+    },
+    {
+      "id": "p04",
+      "title": "Conferir a ocupação efetiva dos quartos do núcleo de Giovanni em Roma",
+      "category": "Hospedagem",
+      "status": "pendente"
+    },
+    {
+      "id": "p05",
+      "title": "Resolver transporte para 11 pessoas nos dias 7 e 8/01 (apenas um carro de 5 lugares reservado)",
+      "category": "Transporte",
+      "status": "pendente"
+    },
+    {
+      "id": "p06",
+      "title": "Corrigir a ocupação registrada do quarto de Perla em Marina di Camerota",
+      "category": "Hospedagem",
+      "status": "pendente"
+    },
+    {
+      "id": "p07",
+      "title": "Reconfirmar distribuição dos quartos e horários de check-in em Nápoles",
+      "category": "Hospedagem",
+      "status": "pendente"
+    },
+    {
+      "id": "p08",
+      "title": "Confirmar transfer entre o ibis Milano Malpensa Aeroporto e o terminal em 10/01",
+      "category": "Hospedagem",
+      "status": "pendente"
+    },
+    {
+      "id": "p09",
+      "title": "Conferir depósito, seguro, CNH e PID do carro",
+      "category": "Documentação",
+      "status": "pendente"
+    },
+    {
+      "id": "p10",
+      "title": "Reservar ingressos da Accademia, Vaticano e Coliseu",
+      "category": "Passeios",
+      "status": "pendente"
+    },
+    {
+      "id": "p11",
+      "title": "Avaliar ingressos dos Uffizi e da Última Ceia",
+      "category": "Passeios",
+      "status": "pendente"
+    },
+    {
+      "id": "p12",
+      "title": "Definir trens regionais para Pisa e Lucca",
+      "category": "Transporte",
+      "status": "pendente"
+    },
+    {
+      "id": "p13",
+      "title": "Corrigir ocupação do Gioberti Art Hotel (03–07/01) e do ibis Milano Malpensa (09–10/01) para quatro hóspedes no núcleo de Giovanni: PDFs indicam somente dois adultos em dois quartos.",
+      "category": "Hospedagem",
+      "status": "pendente"
+    },
+    {
+      "id": "p14",
+      "title": "Confirmar a distribuição dos hóspedes e camas nos dois quartos do Napolit'amo de Giovanni (08–09/01); PDFs nomeiam Giovanni em ambos.",
+      "category": "Hospedagem",
+      "status": "pendente"
+    },
+    {
+      "id": "p15",
+      "title": "Reconfirmar horário vigente do LA3496 em 29/12: bilhete de Giovanni/Pedro/Arthur indica 20h55–23h30, roteiro indica alteração para 21h55–00h30.",
+      "category": "Transporte",
+      "status": "pendente"
+    },
+    {
+      "id": "p16",
+      "title": "Confirmar bilhete doméstico de Marina, trem Roma–Nápoles de 07/01 e acessibilidade em Camerota. O trem Nápoles–Milão de Giovanni, Marina, Pedro e Arthur em 09/01 já está confirmado.",
+      "category": "Hospedagem",
+      "status": "pendente"
+    }
+  ]
+}
