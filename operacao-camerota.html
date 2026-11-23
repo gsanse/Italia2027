@@ -265,6 +265,93 @@ a{accent-color:#a04435}
 a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible{outline:3px solid #b67d3d;outline-offset:3px}
 @media(min-width:1000px){nav a{background:transparent}nav a:hover{background:#e6d7bb;color:#30493e}}
 @media(prefers-reduced-motion:reduce){#atracoes .atracao{transition:none}}
+
+/* EDIZIONE CINEMASCOPE — color direction 2.0 · explicit high-impact treatment */
+:root{
+  --bg:#f1e4cf;--green:#315b5b;--film-red:#922f35;--film-ink:#243f43;
+  --film-gold:#d5a960;--line:#d8bf9e;--muted:#62584b;
+}
+body{background:#f1e4cf;color:#342e2a}
+header{
+  background:
+    radial-gradient(circle at 81% 30%,#d1a07134 0,transparent 36%),
+    repeating-linear-gradient(90deg,#ffffff05 0px,#ffffff05 1px,transparent 1px,transparent 13px),
+    linear-gradient(117deg,#4d222b 0%,#782f3a 47%,#9f4c45 100%);
+  border-bottom:11px solid #d3a05c;
+}
+.mission-hero{min-height:570px}
+.mission-title{color:#fff0cc;text-shadow:5px 5px 0 #3b1c26}
+.mission-title span{color:#f0bf86}
+.mission-eyebrow{color:#f4d39d}
+.mission-film{background:#efc282;color:#48282b;border:2px solid #f7dfb6;box-shadow:7px 7px 0 #411b25}
+.mission-date{color:#ffdfab}
+.mission-sub{color:#fff1da}
+.mission-actions a{background:#e4b66b;color:#402c2c;border:2px solid #f4d6a4}
+.mission-actions a.secondary{background:#51252d;color:#fff5e3;border-color:#e5bc86}
+.mission-actions a:hover{background:#f3d293;color:#4d292b}
+.mission-actions a.secondary:hover{background:#753743;color:#fff5e3}
+.mission-stamp{background:#294e52;border-color:#f0cb8e;color:#fff5da}
+nav{background:#284a4d;border-bottom:5px solid #d3a05c}
+nav a,nav a:visited{color:#fff3db;background:#375c60}
+nav a:hover,nav a[aria-current="location"],nav a[aria-current="page"]{background:#f0d1a0;color:#3a2927}
+@media(min-width:1000px){
+ nav a{background:#375c60}
+ nav a:hover{background:#f0d1a0;color:#3a2927}
+}
+.quick-nav{background:#284a4d;border-top:3px solid #d3a05c}
+.quick-nav a,.quick-nav a:visited{color:#fff5e3}
+.quick-nav a:active{background:#486d6e}
+section{border-top:2px solid #cbb596}
+section h2,section>h2{color:#8c343c}
+section h2:after{content:"";display:block;width:65px;height:4px;background:#d8a85d;margin-top:10px;border-radius:2px}
+.section-take{color:#705043}
+.mission-chapters{color:#265657;background:#e3d4ba;display:inline-block;padding:5px 12px;border-left:4px solid #a74742;letter-spacing:.13em;margin-bottom:10px}
+.mission-intro{
+  border:2px solid #c9aa82;border-top:12px solid #8e3540;
+  background:linear-gradient(120deg,#fff4df,#f4dfbd);
+  box-shadow:8px 10px 0 #d5b895;
+}
+.mission-intro h2{color:#81323b}
+.mission-intro .intro-kicker{color:#8a3b40}
+.mission-intro h3{color:#375b5c}
+.mission-intro .intro-lead{color:#744d44}
+#familia .pessoa-card{
+  background:linear-gradient(#d6c19f 0 30%,#fff0d3 30%)!important;
+  border-color:#fff3d9;outline-color:#b88b66;
+  box-shadow:5px 7px 0 #bd9871,0 16px 23px #47211e20
+}
+#familia .pessoa-card:before{color:#9a383e}
+#familia .pessoa-card h3{color:#7a303b}
+#familia .pessoa-card:after{color:#a9683c}
+#familia .familia-info .card{background:#f9e9cc;border-left:5px solid #933944}
+#familia .familia-info h3{color:#85333e}
+#rota .mapa-estatico{border:10px solid #e4cfad;box-shadow:8px 10px 0 #d4b68e}
+#rota .mapa-estatico figcaption{background:#e9d8bc}
+.mission-status article{background:#f9ecd6;border-color:#d2b08e;border-top:7px solid #8b3843}
+.mission-status strong{color:#8b3843}
+.mission-note{background:#f4e0bd;border-left:6px solid #a34b43}
+.mission-jump a{background:#e0e6df;color:#274a50;border:1px solid #a8beb7}
+.mission-jump a:hover{background:#c9d9d0}
+#atracoes .atracao{background:#fff2dd;border:2px solid #d4b998;box-shadow:5px 6px 0 #c9a885}
+#atracoes .atracao-body h3{color:#843742}
+#atracoes .atracao-body .data{background:#8e3d45;color:#fff4e0}
+#atracoes .atracao-art{background:linear-gradient(145deg,#b9d2cc,#e2bc96)}
+.card,.detail,.pend-item,.scroll,.check{background:#fff6e6;border-color:#d5b895}
+.card h3,.detail h3{color:#7d3740}
+.days .day{background:#fff2de;border-color:#d3b88f}
+.days .day.active{background:#8d3b45;border-color:#8d3b45;box-shadow:inset 0 0 0 2px #edc488}
+.days .day:hover{border-color:#97454a}
+.action{background:#8b3943;color:#fff4e0}
+.action:hover{background:#642d36;color:#fff4e0}
+.flight{background:#e8efeb;border-left-color:#315b61}
+th{background:#365c60;color:#fff6e4}
+tr:nth-child(even) td{background:#f2e5cd}
+.pend-tag{background:#ead6b9}
+.pend-status-pendente{background:#f3dab0;color:#6e4523}
+.pend-status-andamento{background:#d7e7e6;color:#305b63}
+.pend-status-resolvido{background:#d9e8d7;color:#386147}
+footer{background:#49272e;border-top:8px solid #d3a05c;color:#fff1d8}
+@media(max-width:760px){.mission-hero{min-height:0}.mission-title{text-shadow:3px 3px 0 #3b1c26}}
 </style></head><body>
 <header><div class="mission-hero"><div class="mission-copy"><div class="mission-eyebrow">Uma comédia familiar baseada em fatos reais · Itália 2026–2027</div><h1 class="mission-title">Operação <span>Camerota</span></h1><div class="mission-film">MISSÃO (QUASE) IMPOSSÍVEL</div><p class="mission-sub">13 viajantes. 3 gerações. 1 destino.<br><strong>E ninguém sabe quem está com os bilhetes.</strong></p><p class="mission-date">26 DE DEZEMBRO DE 2026 — 10 DE JANEIRO DE 2027</p><div class="mission-actions"><a href="#familia">Conheça o elenco</a><a href="#calendario" class="secondary">Plano da missão</a><a href="./index.html" class="secondary">Ver versão clássica</a></div></div><div class="mission-art" aria-label="Galeria de fotografias locais e mapa da viagem"><div class="mission-stamp">ITALIA<br>2026–27</div><figure><img src="./LUCCA.jpg" alt="Piazza dell’Anfiteatro em Lucca" loading="eager" onerror="this.hidden=true"><figcaption>Lucca</figcaption></figure><figure><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Michelangelo%27s_David_%28Galleria_dell%27Accademia%2C_Firenze%2C_Italy%29.jpg/960px-Michelangelo%27s_David_%28Galleria_dell%27Accademia%2C_Firenze%2C_Italy%29.jpg" alt="David de Michelangelo em Florença" loading="eager" onerror="this.hidden=true"><figcaption>Firenze</figcaption></figure><figure><img src="./mapa-sanseveros-italia-2026-2027.png" alt="Mapa ilustrado da viagem da família pela Itália" loading="eager" onerror="this.hidden=true"><figcaption>Il grande viaggio</figcaption></figure><figure class="mission-art-poster" aria-label="Cartaz ilustrativo de Camerota"><div class="mission-poster-landscape" aria-hidden="true">🏘️<span>🌊</span></div><figcaption>Camerota</figcaption></figure></div></div></header>
 <nav><div><a href="./index.html" aria-label="Voltar à versão clássica">↩ Versão clássica</a><a href="#introducao">Prólogo</a><a href="#rota">Mapa</a><a href="#familia">🎬 Elenco</a><a href="#situacao">📌 Situação</a><a href="#atracoes">Atrações</a><a href="#calendario">Calendário</a><a href="#origens-camerota">Origens</a><a href="#sugestoes-lucas">📋 Roteiro detalhado</a><a href="#voos">Voos</a><a href="#trens">Trens</a><a href="#hoteis">Hotéis</a><a href="#carro">Carro</a><a href="#pendencias">Pendências</a></div></nav>
